@@ -8,4 +8,32 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/seunggulee/DEV/YsDeveloper/msa/git-local-repo
+          uri: ENC(VuS3exDePPIDvJGRHKpIUOP0QQllvUGWbk3K5ulCDLj+vLSxCwl1NleXA69ugXstxUXhno6xTX2wCDpen01dkQ==)
+          username: ENC(rRbvCm2aku7LfQnrGdVQArsKMfObClDk)
+          password: ENC(eEJyg6wa9fa5o+kGxoO5ldwhq17qOzUHza042UNRzYCAVNgSjKdwVUK3CNvFTEPTOV9sqxgBA2Q=)
+        native:
+          search-locations: ENC(Innao7wT8JHR1xI0uyl1rm43r+GIlP0lUow8+RgF23j5vpsfG24T11Zy5ysDPnT9IGQQEBMqo79qmsSxj5wutQ==)
+#        git:
+#          uri: file:///Users/seunggulee/DEV/YsDeveloper/msa/git-local-repo
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  profiles:
+    active: native
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
+          - beans
+          - httptrace
+          - busrefresh
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
