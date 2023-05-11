@@ -11,13 +11,17 @@ spring:
           uri: ENC(KhMHcUbp0YrnIDBNg+es4mfhWbPpr2m3YGOyv7WuejdL5rukP4urB/4zEmJcxJNe6qlT8JXpWiova9/Ed0M4rA==)
           username: ENC(DPXOWw+/Ziwroo1Z/I8oxf4gnwm4clTkIBdU9a59hTA=)
           password: ENC(vSflkjwHvWHo4v8TUjEccnHRwVrEV7P+WEkooSL6uwRQsJ+K6iJvcWlGwa6tyLCQ5zaObjqlADc=)
-          native:
-            search-locations: ENC(m9epUMDTBrK6orjujmPmTW2XipKPXRxyLcacVGXZU9m65hrn7kAgQ8KHjBejNRgO5ho3rc5rMA504FoGLpUUlA==)
+        native:
+          search-locations: ENC(m9epUMDTBrK6orjujmPmTW2XipKPXRxyLcacVGXZU9m65hrn7kAgQ8KHjBejNRgO5ho3rc5rMA504FoGLpUUlA==)
   rabbitmq:
-    host: 127.0.0.1
+    host: rabbitmq
     port: 5672
-    username: guest
-    password: guest
+    username: ENC(Bot/+r1iGvPV4zwpaLRlUA==)
+    password: ENC(jGrJa8prAIJHNmGjQGmOmhy+wmmvnnRT)
+
+  profiles:
+    activate:
+      on-profile: dev
 
 management:
   endpoints:
