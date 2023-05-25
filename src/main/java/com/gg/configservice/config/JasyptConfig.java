@@ -1,4 +1,4 @@
-package com.sgjy.configservice.config;
+package com.gg.configservice.config;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.jasypt.encryption.StringEncryptor;
@@ -15,7 +15,7 @@ public class JasyptConfig {
     public StringEncryptor stringEncryptor(Environment environment) {
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
-        config.setPassword(environment.getProperty("jasypt.encryptor.password", "defaultValue"));
+        config.setPassword(environment.getProperty("jasypt.encryptor.password", "xlrpejdlszmflqxmvotmdnjem"));
         config.setAlgorithm("PBEWithSHA1AndDESede");
         config.setKeyObtentionIterations("1000");
         config.setPoolSize("1");
