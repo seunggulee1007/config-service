@@ -10,7 +10,7 @@ spring:
         git:
           uri: ENC(0GMUCNq2if/XKzVsw75X4GcR/4jAOJIF9Ltz1mW34FBMAeCQ8ZlvGtKQyc1GSfEBgK9iouthww7oC/rc1MUSp4nl1M7+j/jE)
           username: ENC(DPXOWw+/Ziwroo1Z/I8oxf4gnwm4clTkIBdU9a59hTA=)
-          password: ENC(2RYDg5eIF7NHAJLg7VP26I/UGcPYW+14CtqxFkG5Z4HiLG/OvPMdKkUd0U7ir4LChKsYn4B9awI=)
+          password: ENC(ndFCwZscxqGeZjxZpJRxhfGK2OtP59/q2U2avbFi0k4ecS5edpWi8oteQy1MKBUxfnDyEyLqRWk=)
         native:
           search-locations: ENC(m9epUMDTBrK6orjujmPmTW2XipKPXRxyLcacVGXZU9m65hrn7kAgQ8KHjBejNRgO5ho3rc5rMA504FoGLpUUlA==)
   rabbitmq:
