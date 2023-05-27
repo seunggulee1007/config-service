@@ -1,4 +1,4 @@
-package com.sgjy.configservice.config;
+package com.gg.configservice.config;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -23,12 +23,11 @@ class JasyptConfigTest {
     @Test
     void _1_encrypt_decrypt() {
 
-        String orgText = "file://${user.home}/DEV/YsDeveloper/msa/git-local-repo";
+        String orgText = "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";
 
         String encText = jasyptStringEncryptor.encrypt( orgText );
 
-        log.error( "encText:: {}", encText );
-
+        log.error("enc :: {}", encText );
         String decrypt = jasyptStringEncryptor.decrypt( encText );
 
         log.error( "decrypt:: {}", decrypt );
