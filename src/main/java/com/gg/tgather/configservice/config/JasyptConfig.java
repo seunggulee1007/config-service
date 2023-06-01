@@ -1,4 +1,4 @@
-package com.gg.configservice.config;
+package com.gg.tgather.configservice.config;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.jasypt.encryption.StringEncryptor;
